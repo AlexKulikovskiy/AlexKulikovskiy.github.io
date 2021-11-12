@@ -1,0 +1,35 @@
+.descr {
+    width: 680px;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #0D0D0D;
+}
+.marafon {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #646464;
+}
+.text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D0D0D;
+}
+.feedback {
+    display: block;
+    height: 920px;
+    margin-bottom: 50px;
+    &__number {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        img {
+            width: 169px;
+            height: 169px;
+        }
+    }
+}
