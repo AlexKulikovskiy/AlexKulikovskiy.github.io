@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
-    height: 360px;
+    min-height: 360px;
     background: #F2F2F2;
     padding: 38px 40px 40px 40px;
     &__close {
@@ -41,6 +41,13 @@
     }
     &_mini {
         height: 60px;
+    }
+    .error {
+        border: 2px solid red;
+    }
+    label.error {
+        margin-bottom: 13px;
+        border: none;
     }
 }
 #consultation, #order, #thn {

@@ -61,4 +61,31 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+    
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email:{
+                    required: true,
+                    email: true
+                }
+            },
+            messages:{
+                name:"Пожайлуйста, введите имя",
+                phone:"Введите свой номер телефона",
+                email:{
+                    required:"Введите свой email адрес",
+                    email:"Формат @mail.com"
+                }
+            }
+        });
+    };
+    validateForms('#consultation form');
+    validateForms('#consultation-form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+375 (99) 999-99-99");
 });
